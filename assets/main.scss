@@ -19,7 +19,7 @@
 .header__image img {
   width: 100%;
   max-width: $max-header-img-size;
-  min-width: 150px;
+  min-width: 100px;
   height: auto;
   border-radius: 100%;
 }
@@ -125,9 +125,21 @@ code.highlighter-rouge
 {
   margin: 0;
 }
+@media (min-width: 768px)
+{
+  .header__image img 
+  {
+    max-width: $max-header-img-size-md;
+  }
+
+}
 
 @media (min-width: 1200px)
 {
+  .header__image img 
+  {
+    max-width: $max-header-img-size-lg;
+  }
   .post-content p
   {
     max-width:75%;

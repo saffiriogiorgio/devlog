@@ -32,7 +32,9 @@ $content-width: 800px !default;
 $on-palm: 600px !default;
 $on-laptop: 800px !default;
 
-$max-header-img-size: 300px;
+$max-header-img-size: 150px;
+$max-header-img-size-md: 200px;
+$max-header-img-size-lg: 300px;
 
 // Import partials.
 @import "minima/base", "minima/syntax-highlighting";
