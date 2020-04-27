@@ -1,0 +1,54 @@
+---
+layout: default
+---
+
+<div class="container">
+  {%- if page.title -%}
+  <h1 class="page-heading">{{ page.title }}</h1>
+  {%- endif -%}
+
+  {{ content }}
+
+  {%- if site.posts.size > 0 -%}
+  <div class="post-list">
+    {%- for post in site.posts -%}
+    <div class="post-list-item text-center">
+      <h3>
+        <a class="post-link" href="{{ post.url | relative_url }}">
+          {{ post.title | escape }}
+        </a>
+      </h3>
+
+      {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+      <p class="post-meta">{{ post.date | date: date_format }}</p>
+
+      {%- if site.show_excerpts -%}
+      {%- if post.summary -%}
+      <p class="sub-text">{{ post.summary }}</p>
+      {%- else -%}
+      <p class="sub-text">{{ post.excerpt | remove: '<p>' | remove: '</p>' | truncate: 300}}</p>
+      {%- endif -%}
+      {%- endif -%}
+
+
+      {%- if post.image -%}
+      <a href="{{ post.url | relative_url }}">
+        <figure>
+          <img class="img-fluid rounded" src="{{ post.image }}" alt="{{post.title}} image"
+            title="read article {{post.title}}" />
+        </figure>
+      </a>
+      {%- endif -%}
+      <div class="my-3">
+        <a href="{{ post.url | relative_url }}" class="btn btn-info">
+          Read Post
+        </a>
+      </div>
+    </div>
+    {%- endfor -%}
+  </div>
+
+  <!--<p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>-->
+  {%- endif -%}
+
+</div>

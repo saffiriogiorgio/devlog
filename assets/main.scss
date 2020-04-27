@@ -1,0 +1,149 @@
+---
+---
+
+@import url("https://fonts.googleapis.com/css?family=PT+Sans:400,700|Ubuntu+Mono:400,700");
+
+@import "minima";
+
+.sub-text
+{
+  color: $base-subtext-color;
+}
+.header {
+  padding: 30px 20px;
+  margin-bottom: 0em;
+}
+.header__image {
+  display: block;
+}
+.header__image img {
+  width: 100%;
+  max-width: $max-header-img-size;
+  min-width: 150px;
+  height: auto;
+  border-radius: 100%;
+}
+.header__title {
+  font-size: 2.369em;
+  font-family: $header-font-family;
+  font-weight: 700;
+}
+
+.header__tagline
+{
+  font-family: $header-font-family;
+}
+
+.navbar-nav .active {
+  border-bottom: 2px solid #ccc;
+}
+
+
+.post-header, .post-list-heading, .page-heading
+{
+  text-align: center;
+}
+
+.post-list-item
+{
+  margin-bottom: 8em;
+}
+
+
+.footer
+{
+  margin-top: 1.5em;
+}
+.social-media-list .social-link
+{
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+  max-width: 35px;
+  min-width: 25px;
+  height: auto;
+  max-height: 35px;
+  min-height: 25px;
+  overflow-y: hidden;
+  margin-right: 5px;
+}
+.social-media-list .social-link .svg-icon
+{
+  width: 100%;
+  height: auto;
+}
+
+///
+/// POST ELEMENTS
+
+
+.post-content
+{
+  margin: 2em auto;
+}
+
+
+code.highlighter-rouge
+{
+  background: #eee;
+  border-radius: 5px;
+  padding: 0.2em;
+}
+
+.post-content blockquote.blockquote__special  
+{
+  background:none;
+  border-left: none;
+    max-width: 100%;
+    padding: 0;
+    letter-spacing: 0.3px;
+    color: $grey-color;
+}
+
+.post-content .post-image
+{
+  margin: 0.3em auto 0.6em;
+}
+
+.post-content .post-image figcaption
+{
+  text-align: center;
+  padding: 5px;
+  color: $grey-color;
+}
+
+
+.post-content blockquote
+{
+  background: #f9f9f9;
+  border-left: 5px solid #ccc;
+  margin: 0.3em auto 0.6em;
+  padding: 0.5em;
+  color: $grey-color;
+}
+.post-content blockquote p
+{
+  margin: 0;
+}
+
+@media (min-width: 1200px)
+{
+  .post-content p
+  {
+    max-width:75%;
+  } 
+  .post-content h1, .post-content h2, .post-content h3, 
+  .post-content h4, .post-content h5, .post-content h6
+  {
+    max-width:75%;
+  } 
+  .post-content blockquote
+  {    
+    max-width:75%;
+  }
+
+  .highlight
+  {
+    max-width: 75%;
+  }
+}

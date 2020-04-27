@@ -1,0 +1,38 @@
+@charset "utf-8";
+
+// Define defaults for each variable.
+
+$base-font-family: "Ubuntu Mono", monospace;
+$base-font-size: 20px !default;
+$base-font-weight: 400 !default;
+$base-line-height: 1.65 !default;
+
+$spacing-unit: 30px !default;
+
+$text-color: #111 !default;
+$background-color: #fdfdfd !default;
+$brand-color: #2a7ae2 !default;
+
+$grey-color: #828282 !default;
+$grey-color-light: lighten($grey-color, 40%) !default;
+$grey-color-dark: darken($grey-color, 25%) !default;
+
+$base-subtext-color: lighten($grey-color, 10%) !default;
+
+$table-text-align: left !default;
+
+$header-font-family: "PT Sans", sans-serif;
+$header-font-size: 18px !default;
+$header-font-weight: 700 !default;
+$header-line-height: 1.15 !default;
+
+// Width of the content area
+$content-width: 800px !default;
+
+$on-palm: 600px !default;
+$on-laptop: 800px !default;
+
+$max-header-img-size: 300px;
+
+// Import partials.
+@import "minima/base", "minima/syntax-highlighting";
